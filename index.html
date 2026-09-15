@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,7 +7,8 @@
 
 <style>
 body {
-font-family: sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+"Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
 line-height: 1.7;
 margin: 0;
 color: #333;
@@ -24,8 +24,8 @@ padding: 20px;
 h1 {
 color: #1e88e5;
 text-align: center;
-font-size: 2.2em;
-margin-bottom: 10px;
+font-size: 2.3em;
+margin-bottom: 8px;
 }
 
 h2 {
@@ -44,7 +44,7 @@ margin: 10px 0 25px;
 
 .area {
 background: #e3f2fd;
-padding: 15px;
+padding: 18px;
 margin: 20px 0;
 text-align: center;
 border-radius: 8px;
@@ -52,11 +52,12 @@ border-radius: 8px;
 
 .highlight {
 font-weight: bold;
-font-size: 1.1em;
+font-size: 1.15em;
+color: #1e88e5;
 }
 
 .service-list {
-padding-left: 20px;
+padding-left: 22px;
 }
 
 .price-table {
@@ -74,7 +75,6 @@ text-align: left;
 
 .price-table th {
 background: #e3f2fd;
-color: #333;
 }
 
 .price {
@@ -89,42 +89,96 @@ color: #666;
 margin-top: 10px;
 }
 
-.contact {
-background: #ffeb3b;
-padding: 20px;
+.badges {
 text-align: center;
-font-size: 1.15em;
-margin-top: 40px;
-border-radius: 8px;
-}
-
-.contact strong {
-font-size: 1.3em;
+margin: 20px 0;
 }
 
 .badge {
 display: inline-block;
 background: #1e88e5;
 color: white;
-padding: 5px 12px;
+padding: 6px 13px;
 border-radius: 20px;
 margin: 4px;
 font-size: 0.9em;
 }
 
+.contact {
+background: #ffeb3b;
+padding: 25px 15px;
+text-align: center;
+margin-top: 40px;
+border-radius: 10px;
+}
+
+.contact-title {
+font-size: 1.3em;
+font-weight: bold;
+margin-bottom: 18px;
+}
+
+.contact-button {
+display: block;
+max-width: 500px;
+margin: 12px auto;
+padding: 14px 10px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1em;
+}
+
+.phone-button {
+background: #fff;
+color: #1e88e5;
+border: 2px solid #1e88e5;
+}
+
+.mail-button {
+background: #fff;
+color: #1e88e5;
+border: 2px solid #1e88e5;
+}
+
+.contact-note {
+font-size: 0.9em;
+margin-top: 15px;
+}
+
+.footer {
+text-align: center;
+color: #777;
+font-size: 0.85em;
+margin: 30px 0 10px;
+}
+
 @media (max-width: 600px) {
+
 .container {
 padding: 15px;
 }
 
 h1 {
-font-size: 1.8em;
+font-size: 1.9em;
+}
+
+h2 {
+font-size: 1.35em;
+}
+
+.catchcopy {
+font-size: 1.05em;
 }
 
 .price-table th,
 .price-table td {
 padding: 9px;
 font-size: 0.9em;
+}
+
+.contact-button {
+font-size: 1em;
 }
 }
 </style>
@@ -134,6 +188,7 @@ font-size: 0.9em;
 
 <div class="container">
 
+<!-- タイトル -->
 <h1>KEINAnサービス</h1>
 
 <p class="catchcopy">
@@ -141,26 +196,33 @@ font-size: 0.9em;
 修理・クリーニング・取り付け・取り外しまで対応
 </p>
 
+<!-- 対応エリア -->
 <div class="area">
 <strong>東京・埼玉・神奈川・千葉 対応</strong><br>
 <span class="highlight">24時間対応可能！</span><br>
-第二種電気工事士在籍・難しい作業もご相談ください
+第二種電気工事士・難しい作業もご相談ください
 </div>
 
 <p>
-KEINAnサービスでは、エアコンに関する工事・クリーニング・修理まで
-<strong>迅速・丁寧に対応</strong>いたします。
+KEINAnサービスでは、エアコンに関する
+<strong>修理・クリーニング・取り付け・取り外し・電気工事</strong>
+など、幅広いサービスに対応しております。
 </p>
 
 <p>
-「エアコンが冷えない」「水漏れしている」「急に動かなくなった」
-「エアコンを取り付けたい」「掃除をしたい」など、
-エアコンに関するお困りごとはお気軽にご相談ください。
+「エアコンが冷えない」
+「水漏れしている」
+「急に動かなくなった」
+「エアコンを取り付けたい」
+「エアコンを掃除したい」
+など、エアコンに関するお困りごとはお気軽にご相談ください。
 </p>
 
+
+<!-- サービス -->
 <h2>主なサービス</h2>
 
-<div>
+<div class="badges">
 <span class="badge">エアコン修理</span>
 <span class="badge">クリーニング</span>
 <span class="badge">完全分解洗浄</span>
@@ -170,9 +232,12 @@ KEINAnサービスでは、エアコンに関する工事・クリーニング�
 <span class="badge">難工事</span>
 </div>
 
+
+<!-- 基本料金 -->
 <h2>料金表</h2>
 
 <table class="price-table">
+
 <tr>
 <th>サービス内容</th>
 <th>料金</th>
@@ -205,22 +270,21 @@ KEINAnサービスでは、エアコンに関する工事・クリーニング�
 
 <tr>
 <td>エアコン処分</td>
-<td class="price">1,500円〜</td>
+<td class="price">1,500円</td>
 </tr>
-  
-<tr>
-<td>使用していないエアコンの引き取り</td>
-<td class="price">無料</td>
-</tr>
+
 </table>
 
 <p class="note">
-※上記料金は基本料金です。作業内容・エアコンの機種・設置状況などによって追加料金が発生する場合があります。
+※上記は基本料金です。エアコンの機種・設置状況・作業内容などによって追加料金が発生する場合があります。
 </p>
 
+
+<!-- 追加料金 -->
 <h2>追加料金</h2>
 
 <table class="price-table">
+
 <tr>
 <th>作業内容</th>
 <th>料金</th>
@@ -270,18 +334,22 @@ KEINAnサービスでは、エアコンに関する工事・クリーニング�
 <td>その他特殊作業</td>
 <td class="price">要見積もり</td>
 </tr>
+
 </table>
 
+
+<!-- 修理 -->
 <h2>エアコン修理について</h2>
 
 <p>
-エアコン修理は、故障内容や設置状況、必要な部品などによって
-料金が大きく異なります。
+エアコン修理は、故障内容・エアコンの機種・設置状況・必要な部品などによって、
+必要な作業や料金が異なります。
 </p>
 
 <p>
-そのため、修理料金は一律料金ではなく、
-<strong>現地で状況を確認したうえで都度お見積もり</strong>いたします。
+そのため、修理料金は一律ではなく、
+<strong>現地で状況を確認したうえで都度お見積もり</strong>
+とさせていただいております。
 </p>
 
 <ul class="service-list">
@@ -298,6 +366,8 @@ KEINAnサービスでは、エアコンに関する工事・クリーニング�
 まずはお気軽にご相談ください。
 </p>
 
+
+<!-- その他 -->
 <h2>その他対応可能な作業</h2>
 
 <ul class="service-list">
@@ -312,6 +382,8 @@ KEINAnサービスでは、エアコンに関する工事・クリーニング�
 <li>不要になったエアコンの引き取り</li>
 </ul>
 
+
+<!-- 強み -->
 <h2>KEINAnサービスの強み</h2>
 
 <ul class="service-list">
@@ -324,20 +396,46 @@ KEINAnサービスでは、エアコンに関する工事・クリーニング�
 
 <p>
 遠方の場合や事前に作業内容を確認したい場合は、
-エアコンや設置場所の写真をお送りください。
+エアコン本体や設置場所の写真をお送りください。
 対応可能か確認したうえでご案内いたします。
 </p>
 
+
+<!-- お問い合わせ -->
 <div class="contact">
 
-📞 お問い合わせ<br>
-<a href="tel:080-4606-4330">
-<strong>080-4606-4330</strong><br>
-✉ お問い合わせ<br>
-<a href="Mail:keita.1224.kmkm@gmail.com"><br>
-<strong>keita.1224.kmkm@gmail.com</strong><br>
+<div class="contact-title">
+📞 お問い合わせ
+</div>
 
-担当：町田慶太
+<a
+class="contact-button phone-button"
+href="tel:080-4606-4330">
+📞 080-4606-4330<br>
+<small>タップして電話する</small>
+</a>
+
+<a
+class="contact-button mail-button"
+href="mailto:keita.1224.kmkm@gmail.com">
+✉️ keita.1224.kmkm@gmail.com<br>
+<small>タップしてメールする</small>
+</a>
+
+<div class="contact-note">
+エアコンに関するご相談・お見積もりなど<br>
+お気軽にお問い合わせください。
+</div>
+
+</div>
+
+
+<!-- フッター -->
+<div class="footer">
+KEINAnサービス<br>
+エアコン修理・クリーニング・工事
+</div>
+
 </div>
 
 </body>
